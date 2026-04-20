@@ -1,0 +1,116 @@
+import { FloatingDecor, Daisy, Heart, Cat } from "@/components/FloatingDecor";
+import { HeartBurst } from "@/components/HeartBurst";
+
+const Index = () => {
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-gradient-romantic">
+      <FloatingDecor />
+      <HeartBurst />
+
+      <main className="relative z-10">
+        {/* HERO */}
+        <section className="flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center">
+          <div className="mb-6 flex items-center justify-center gap-3 animate-fade-in">
+            <span className="animate-spin-slow"><Daisy size={48} /></span>
+            <span className="animate-heartbeat"><Heart size={42} /></span>
+            <span className="animate-wiggle"><Cat size={56} /></span>
+          </div>
+
+          <p className="font-hand text-3xl text-primary md:text-4xl animate-fade-in" style={{ animationDelay: "0.1s", animationFillMode: "both" }}>
+            a little something
+          </p>
+          <h1 className="mt-2 bg-gradient-to-r from-primary via-heart to-primary bg-clip-text text-6xl text-transparent md:text-8xl animate-fade-in" style={{ animationDelay: "0.2s", animationFillMode: "both" }}>
+            For My Love 💗
+          </h1>
+
+          {/* Two cats cuddling + ussssss text */}
+          <div className="mt-8 flex flex-col items-center gap-3 animate-fade-in" style={{ animationDelay: "0.35s", animationFillMode: "both" }}>
+            <div className="flex items-end justify-center">
+              <span className="animate-wiggle -mr-3 rotate-[-12deg]"><Cat size={84} /></span>
+              <span className="animate-heartbeat mb-8"><Heart size={28} /></span>
+              <span className="animate-wiggle -ml-3 rotate-[12deg] scale-x-[-1]"><Cat size={84} /></span>
+            </div>
+            <p className="font-hand text-3xl text-heart md:text-4xl">
+              ussssssssssssss &lt;3
+            </p>
+          </div>
+
+          <div className="mt-10 animate-fade-in" style={{ animationDelay: "0.6s", animationFillMode: "both" }}>
+            <a
+              href="#letter"
+              className="inline-block rounded-full bg-gradient-button px-8 py-4 text-lg font-semibold text-primary-foreground shadow-soft transition-bounce hover:scale-105 hover:shadow-plush"
+              style={{ transition: "var(--transition-bounce)" }}
+            >
+              read my letter to you ↓
+            </a>
+          </div>
+        </section>
+
+        {/* LOVE LETTER */}
+        <section id="letter" className="px-4 py-20 md:py-28">
+          <div className="mx-auto max-w-3xl">
+            <div className="mb-10 text-center">
+              <p className="font-hand text-2xl text-primary md:text-3xl">a letter from me to you</p>
+              <h2 className="mt-2 text-4xl text-foreground md:text-5xl">For Mahnoor 💗</h2>
+            </div>
+
+            <article className="relative rounded-[2rem] border-2 border-primary/20 bg-card/90 p-8 shadow-plush backdrop-blur-sm md:p-14">
+              {/* corner daisies */}
+              <div className="absolute -left-4 -top-4 animate-spin-slow"><Daisy size={56} /></div>
+              <div className="absolute -right-4 -top-4 animate-wiggle"><Cat size={56} /></div>
+              <div className="absolute -bottom-4 -left-4 animate-heartbeat"><Heart size={42} /></div>
+              <div className="absolute -bottom-4 -right-4 animate-spin-slow"><Daisy size={48} /></div>
+
+              <div className="space-y-5 text-lg leading-relaxed text-foreground/85 md:text-xl md:leading-loose">
+                <p className="font-hand text-3xl text-primary md:text-4xl">
+                  My dear mahnoor my sweetest cutest baby munchkin baby pieeee 💗
+                </p>
+                <p>
+                  you mean so so much to me meri jaan. If I had a lifetime to write you letters I still would not run out of things to say. You simply the bestest thing that has ever happened to me. I did not know a person could feel like home until I met you.
+                </p>
+                <p>
+                  I love how you light up around the tiniest things. A fluffy plushie, a stray cat passing by, the way you find magic in the small stuff is one of my favorite things about you awieeeeeeeeeee. You make ordinary days feel like little celebrations my cutsey jaan.
+                </p>
+                <p>
+                  I love your laugh more than anything. I love how soft your heart is, even when the world has not always been soft back :( *hugs my beautiful princess pie*. I love the way you care for everything around you, the people, the animals. You have the gentlest heart I have ever known and I am so lucky that I get to be near it. Alhamdullillah Alhamdullillah.
+                </p>
+                <p>
+                  You are my home. You are the "good morning" I look forward to all night You are the reason I believe in soft, slow, forever kinds of love. I want to give you a thousand small things like cutsey daisies tucked behind your ear hehehehehe.
+                </p>
+                <p>
+                  Please remember, especially on the days you forget: <strong className="text-primary">you mean everything to me</strong> On your softest days and your hardest ones, on the days you feel like sunshine and the days you feel like rain, I am here. Always. Forever &lt;3.
+                </p>
+                <p>
+                  Thankyouuuu for being soft with me. Thankyouu for being patient with the parts of me that are still learning how to love you properly. Thankyouuuu for being you exactly as you are. I would choose you again in every story, every life, every version of forever, in every universe.
+                </p>
+                <p>
+                  You are my favorite person my favorite feeling and my favorite forever I love so so much and I am excited and looking forward to spend the rest of my life with my beautiful princess. Less make lots lots of memories and always be the silliest willest couple 💗
+                </p>
+                <p className="font-hand text-3xl text-heart md:text-4xl">
+                  Yours, always. 🌼🧸🐱💗
+                </p>
+                <p className="font-hand text-2xl text-primary md:text-3xl">
+                  Wiwiwiwwiwi Jeeeeeeeee
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer className="px-4 py-12 text-center">
+          <div className="mx-auto flex max-w-md flex-col items-center gap-4">
+            <div className="flex items-center gap-3">
+              <span className="animate-wiggle"><Daisy size={36} /></span>
+              <span className="animate-heartbeat"><Heart size={32} /></span>
+              <span className="animate-wiggle"><Cat size={40} /></span>
+            </div>
+            <p className="font-hand text-2xl text-primary">made with all my love just for you 💗</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  );
+};
+
+export default Index;
